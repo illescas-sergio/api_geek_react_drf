@@ -12,3 +12,9 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class User(models.Model):
+    user_name = models.CharField(max_length=100, null=False)
+    user_email = models.EmailField(null=False)
+    
